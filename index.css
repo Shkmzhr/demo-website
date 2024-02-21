@@ -1,0 +1,123 @@
+.cust-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.cust-name1:hover,
+.cust-name2:hover,
+.cust-name3:hover,
+.cust-name4:hover {
+    /* Hover styles here */
+    scale: 1.02;
+    color: green !important;
+    transition: 0.1s ease-in-out;
+}
+
+
+*{
+  font-family: "Cairo Play", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+.btn-primary{
+    background:#0b65a0;
+    border: #fff;
+}
+
+.h-row{
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+.img-custom{
+    rotate: 180deg;
+    transform: translate(114%, 30%);
+    position: absolute;
+}
+.wrapper-container{
+    /* background: rgb(56,129,102);
+    background: linear-gradient(90deg, rgba(56,129,102,1) 0%, rgba(0,125,121,1) 63%, rgba(0,190,156,1) 99%); */
+
+     background: rgb(11,101,160);
+background: radial-gradient(circle, rgba(11,101,160,1) 40%, rgba(147,213,255,1) 99%);
+}
+.carousel{
+    width: 40rem;
+    border-radius: 12px;
+}
+.carousel-caption{
+    color: black;
+}.img-carousel{
+    width: 12rem;
+}
+
+#carouselExampleCaptions{
+    transform: translate(-51vw, -32vh);
+}
+
+
+.wave{
+    height: 20rem;
+}
+
+.car-buttons{
+    display: flex!important;
+    justify-content: flex-end;
+    align-content: center;
+    gap: 1rem;
+ 
+
+}
+.carousel-indicators [data-bs-target]{
+    background-color:  rgb(11,101,160);;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.second-section{
+    transform: translateY(-5rem);
+}
+
+.card {
+    width: 15rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 11px;
+    cursor: pointer;
+    border: 2px solid #027d79;
+}
+
+.card:hover {
+    background: rgb(11,101,160);
+    background: radial-gradient(circle, rgba(11,101,160,1) 80%, rgba(231,246,255,1) 99%);
+    color: white;
+    border: 0rem;
+}
+.heading{
+    font-size: 2.5rem;
+    color: #0b65a0;
+    font-weight:500;
+}
+
+.header{
+    justify-content: center;
+}
+
+.card-section{
+    background: rgb(11,101,160);
+    background: radial-gradient(circle, rgba(11,101,160,1) 40%, rgba(147,213,255,1) 99%);}
+
+.mid-cards{
+    display: flex;
+    justify-content: center;
+}
