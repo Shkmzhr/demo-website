@@ -4,37 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Istok+Web:ital,wght@0,400;0,700;1,400;1,700&family=Noto+Naskh+Arabic:wght@400;500&family=Poppins:wght@300;400&family=Roboto&family=Vazirmatn:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/index.css">
-    <script src="/index.js"></script>
+    
+    <script src="./index.js"></script>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./index.css">
     <title>Document</title>
 </head>
 <body dir="rtl">
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="Navbar">
         <div class="container-fluid">
             <a class="navbar-brand">
-                <img src="/nav-logo.png" class="img-fluid w-50" >
-                </a>
+                <img src="./nav-logo.png" class="img-fluid w-50">
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-    
             <div class="collapse navbar-collapse cust-list mtforlg" id="navbarNav">
-                <ul class="navbar-nav ">
+                <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link cust-name1 active" aria-current="page" href="#">الصفحة الرئيسية</a>
+                        <a class="nav-link cust-name1 active" aria-current="page" href="#home">الصفحة الرئيسية</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link cust-name2" href="#">من نحن</a>
+                        <a class="nav-link cust-name2" href="#about">من نحن</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link cust-name3" href="#">خدماتنا</a>
+                        <a class="nav-link cust-name3" href="#services">خدماتنا</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link cust-name4" href="#">اتصل بنا</a>
+                        <a class="nav-link cust-name4" href="#contact">اتصل بنا</a>
                     </li>
                 </ul>
             </div>
@@ -45,135 +44,231 @@
                 <button class="btn btn-outline-success " type="button" id="dropdownMenuClickableInside" data-bs-toggle="dropdown" data-bs-auto-close="outside" aria-expanded="false">
                     تسجيل الدخول
                 </button>
-               
-              </div>
-              
+            </div>
         </div>
     </nav>
-   
-    <div class="container-fluid gx-0 mt-5">
+    <div class="container-fluid gx-0 mt-5"id="home">
         <div class="wrapper-container">
-            
             <div class="spacer" style="height: 30vh;"></div>
-          <div class="container" style="height: 10vh;">
-
-              <h1>مرحبًا بكم في موقعنا</h1>
-              <p>هذا مثال بسيط لموقع باللغة العربية يستخدم Bootstrap.</p>
-              <img src="/splash-img-hero-low.png" class="img-fluid img-custom">
+            <div class="container">
+                <h1>مرحبًا بكم في موقعنا</h1>
+                <p>هذا مثال بسيط لموقع باللغة العربية يستخدم Bootstrap.</p>
+                <img src="./splash-img-hero-low.png" class="img-fluid img-custom">
             </div>
-          <div class="wave ">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,117.3C384,117,480,107,576,106.7C672,107,768,117,864,138.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-        </div>
-    </div>
-    <div id="carouselExampleCaptions" class="carousel slide bg-light" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        </div>
-     
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img  src="/splash-img-hero-low.png" class="d-block img-carousel" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>تسمية الشريحة الأولى</h5>
-              <p>بعض محتوى العنصر النائب التمثيلي للشريحة الأولى.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="/splash-img-hero-low.png" class="d-block img-carousel" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>تسمية الشريحة الثانية</h5>
-              <p>بعض محتوى العنصر النائب التمثيلي للشريحة الأولى..</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img  src="/splash-img-hero-low.png" class="d-block img-carousel" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>تسمية الشريحة الثالثة</h5>
-              <p>بعض محتوى العنصر النائب التمثيلي للشريحة الأولى..</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-        <div class="d-flex car-buttons">
-
-            <button class="carousel-control-next-icon btn btn-warning" aria-hidden="true"></button>
-            <button class="carousel-control-prev-icon btn btn-warning" aria-hidden="true"></button>
-        </div>
-        </div>
-      <!-- --------------------second-section----------------------------------- -->
-
-      <div class="second-section container">
-        <div class="heading pb-5">
-            أبرز المنتجات
-        </div>
-       
-        <div class="cards">
-<div class="card">
-    <div class="card-title">
-        استعراض المنافسات
-    </div>
-    <div class="arrow">
-        <img src="/angle-left-solid.svg" width="12px">
-    </div>
-</div>
-<div class="card">
-    <div class="card-title">دفع الخدمات والفواتير الحكومية
-        </div>
-        <div class="arrow">
-            <img src="/angle-left-solid.svg" width="12px">
-        </div>
-    </div>
-<div class="card">
-    <div class="card-title">بوابة المطورين
-        </div>
-        <div class="arrow">
-            <img src="/angle-left-solid.svg" width="12px">
-        </div>
-    </div>
-<div class="card"> <div class="card-title">
-    مزاد اعتماد
-</div>
-<div class="arrow">
-    <img src="/angle-left-solid.svg" width="12px">
-</div>
-</div>
-
-        </div>
-      </div>
-
-      <!-- -------------------------------------cards-section--------------------------------------- -->
-     <div class="container-fluid card-section">
-        <div class="bigcards">
-            <div class="header d-flex">
-<h1 class="text-white">إحصائيات منفذ</h1>
+            <div class="wave ">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,101.3C96,107,192,117,288,117.3C384,117,480,107,576,106.7C672,107,768,117,864,138.7C960,160,1056,192,1152,192C1248,192,1344,160,1392,144L1440,128L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
             </div>
         </div>
-        <div class="mid-cards">
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
-            <div class="card"></div>
+        <div id="carouselExampleCaptions" class="carousel slide bg-light" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./splash-img-hero-low.png" class="d-block img-carousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>تسمية الشريحة الأولى</h5>
+                        <p>بعض محتوى العنصر النائب التمثيلي للشريحة الأولى.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./splash-img-hero-low.png" class="d-block img-carousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>تسمية الشريحة الثانية</h5>
+                        <p>بعض محتوى العنصر النائب التمثيلي للشريحة الأولى..</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="./splash-img-hero-low.png" class="d-block img-carousel" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>تسمية الشريحة الثالثة</h5>
+                        <p>بعض محتوى العنصر النائب التمثيلي للشريحة الأولى..</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="d-flex car-buttons">
+                <button class="carousel-control-next-icon btn btn-warning" aria-hidden="true"></button>
+                <button class="carousel-control-prev-icon btn btn-warning" aria-hidden="true"></button>
+            </div>
         </div>
+        <div class="second-section container"id="about">
+            <div class="heading pb-5">
+                أبرز المنتجات
+            </div>
+            <div class="cards">
+                <div class="card cs-card">
+                    <div class="card-title">
+                        استعراض المنافسات
+                    </div>
+                    <div class="arrow">
+                        <img src="./angle-left-solid.svg" width="12px">
+                    </div>
+                </div>
+                <div class="card cs-card">
+                    <div class="card-title">دفع الخدمات والفواتير الحكومية
+                    </div>
+                    <div class="arrow">
+                        <img src="./angle-left-solid.svg" width="12px">
+                    </div>
+                </div>
+                <div class="card cs-card">
+                    <div class="card-title">بوابة المطورين
+                    </div>
+                    <div class="arrow">
+                        <img src="./angle-left-solid.svg" width="12px">
+                    </div>
+                </div>
+                <div class="card cs-card"> <div class="card-title">
+                    مزاد اعتماد
+                </div>
+                <div class="arrow">
+                    <img src="./angle-left-solid.svg" width="12px">
+                </div>
+                </div>
+            </div>
+        </div>
+        <!-- ==============================mid-section====================================== -->
+        <div class="container-fluid card-section pt-5"id="services">
+            <div class="bigcards">
+                <div class="header d-flex">
+                    <h1 class="text-white">إحصائيات منفذ</h1>
+                </div>
+            </div>
+          
 
-     </div>
-    
+                <div class="mid-cards">
+                    
+                <div class="card cust-cards ">
+                    <div class="card-header">
+                        <img src="./pump.svg" alt="" style="width:5rem; height:5rem">
+                    </div>
+                    <div class="card-body">تاريخ تحرّك المنتصر كل حدى, بوابة والإتحاد شيء من. انذار انتهت يتسنّى أما ثم, أي مكّن العالم بالجانب أخذ. حين في بزمام أثر</div>
+                </div>
+                <div class="card cust-cards">
+                    <div class="card-header">
+                        <img src="./1684158296_image.png" alt="" style="width:5rem; height:5rem">
+                    </div>
+                    <div class="card-body">تاريخ تحرّك المنتصر كل حدى, بوابة والإتحاد شيء من. انذار انتهت يتسنّى أما ثم, أي مكّن العالم بالجانب أخذ. حين في بزمام أثر</div>
+                </div>
+                <div class="card cust-cards">
+                    <div class="card-header">
+                        <img src="./pump.svg" alt="" style="width:5rem; height:5rem">
+                    </div>
+                    <div class="card-body">تاريخ تحرّك المنتصر كل حدى, بوابة والإتحاد شيء من. انذار انتهت يتسنّى أما ثم, أي مكّن العالم بالجانب أخذ. حين في بزمام أثر</div>
+                </div>
+                <div class="card cust-cards">
+                    <div class="card-header ">
+                        <img src="./1684158296_image.png" alt="" style="width:5rem; height:5rem">
+                    </div>
+                    <div class="card-body">تاريخ تحرّك المنتصر كل حدى, بوابة والإتحاد شيء من. انذار انتهت يتسنّى أما ثم, أي مكّن العالم بالجانب أخذ. حين في بزمام أثر</div>
+                </div>
+                <div class="card cust-cards">
+                    <div class="card-header">
+                        <img src="./1684158430_image.png" alt="" style="width:5rem; height:5rem">
+                    </div>
+                    <div class="card-body">تاريخ تحرّك المنتصر كل حدى, بوابة والإتحاد شيء من. انذار انتهت يتسنّى أما ثم, أي مكّن العالم بالجانب أخذ. حين في بزمام أثر</div>
+                </div>
+            </div>
+        </div>
+<!-- ===========================================footer============================================= -->
+<div class="footer">
+    <section class="banner"id="contact">
+        <div class="col-md-6">
+            <div class="links">
+                <ul style="list-style: none;" class="ul">
+                    <li>
+                        <img src="./whatsapp.svg" alt=""  class="img-social">
+
+                    </li>
+                    <li>
+                        <img src="./facebook-f.svg" alt="facebook" titke="facebook"  class="img-social">
+                        </li>
+                    <li>
+                        <img src="./x-twitter.svg" alt="" class="img-social">
+                        </li>
+                    <li>
+                        <img src="./instagram.svg" alt=""  class="img-social">
+                        </li>
+                    <li>
+                        <img src="./snapchat.svg" alt="" class="img-social">
+                        </li>
+                </ul>
+               
+            </div>
+        </div>
+        <div class="logo-footer d-flex">
+            <img src="./nav-logo.png" class="img-fluid img-logo">
+        </div>
+        <div class="d-flex lists">
+            <list class="list1">Privacy</list>
+            <list  class="list2">terms and conditions</list>
+            <list  class="list3">carerrs</list>
+            <list class="list4">help and support</list>
+            <list class="list5">services</list>
+        </div>
+      </section>
+  
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        viewBox="0 24 150 28"
+        preserveAspectRatio="none"
+      >
+        <defs>
+          <path
+            id="gentle-wave"
+            d="M-160 44c30 0 
+          58-18 88-18s
+          58 18 88 18 
+          58-18 88-18 
+          58 18 88 18
+          v44h-352z"
+          />
+        </defs>
+        <g class="waves">
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="0"
+            fill="#03ffff"
+            fill-opacity=".2"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="3"
+            fill="#03ffff"
+            fill-opacity=".5"
+          />
+          <use
+            xlink:href="#gentle-wave"
+            x="50"
+            y="6"
+            fill="#03ffff"
+            fill-opacity=".9"
+          />
+        </g>
+      </svg>
+    </body>
+</div>
     </div>
-      <div class="spacer" style="height: 10vh;"></div>
+  
 </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+
 </body>
-
 </html>

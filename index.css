@@ -1,3 +1,9 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+
 .cust-list{
     display: flex;
     flex-direction: row;
@@ -15,7 +21,7 @@
 
 
 *{
-  font-family: "Cairo Play", sans-serif;
+  font-family: "Cairo play", sans-serif;
   font-optical-sizing: auto;
   font-style: normal;
   font-variation-settings:
@@ -95,14 +101,23 @@ background: radial-gradient(circle, rgba(11,101,160,1) 40%, rgba(147,213,255,1) 
     border-radius: 11px;
     cursor: pointer;
     border: 2px solid #027d79;
+    transition: 0.3s ease-in-out;
 }
 
-.card:hover {
+.cs-card:hover {
     background: rgb(11,101,160);
     background: radial-gradient(circle, rgba(11,101,160,1) 80%, rgba(231,246,255,1) 99%);
     color: white;
     border: 0rem;
+    scale: 1.06;
+    .arrow > svg{
+    fill: #027d79;
+    stroke: #027d79;
+    background: green;
+    color: #fff;
+    }
 }
+
 .heading{
     font-size: 2.5rem;
     color: #0b65a0;
@@ -117,7 +132,100 @@ background: radial-gradient(circle, rgba(11,101,160,1) 40%, rgba(147,213,255,1) 
     background: rgb(11,101,160);
     background: radial-gradient(circle, rgba(11,101,160,1) 40%, rgba(147,213,255,1) 99%);}
 
+
+.card-big{
+    width: 15rem;
+    height: 14rem;
+}
+
+
+.cust-cards{
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 1.5px );
+-webkit-backdrop-filter: blur( 0.5px );
+border-radius: 19px;
+border: 1px solid rgba( 255, 255, 255, 0.18 );
+height: 17rem;
+width: 17rem;
+}
+.cust-cards:hover{
+    background: white;
+    scale: 1.05;
+}
 .mid-cards{
+    gap: 3rem;
+    height: 100%;
+    padding: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+   width: 90%;
+   display: flex;
+   justify-content: center;
+}
+  
+  .waves > use {
+    animation: move-forever 2s -2s linear infinite;
+  }
+  
+  .waves > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 6s;
+  }
+  .waves > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 3s;
+  }
+  
+  @keyframes move-forever {
+    0% {
+      transform: translate(-90px, 0%);
+    }
+    100% {
+      transform: translate(85px, 0%);
+    }
+  }
+  
+
+.ul{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+}
+
+li>img{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-top: 4rem;
+    transition: 0.3s ease-in-out;
+}
+
+li > img:hover {
+    width: 2.7rem;
+    height: 2.7rem;
+    margin-top: 4rem;
+    /* Use a different property to change the color, e.g., background-color */
+    background-color: #027d79;
+    /* Optional: Add a transition for smoother color change */
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.logo-footer{
+    justify-content: flex-end;
+    transform: translateY(-90%);
+}
+
+.lists{
     display: flex;
     justify-content: center;
+    gap: 4rem;
+    color:#0b65a0;
+}
+.list1:hover,
+.list2:hover,
+.list3:hover,
+.list4:hover,
+.list5:hover {
+    display: flex;
+    color: #027d79;
 }
